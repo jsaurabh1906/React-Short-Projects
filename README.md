@@ -105,3 +105,32 @@ A data loading component that allows users to load more data dynamically. Featur
 - Optimized API fetching using a custom useFetch hook.
 - Designed UI using Tailwind CSS for a clean and responsive layout. Used the built in card from UI-Verse and modified it in in product Card.
 - Disabled "Load More" button when the total products reach 100. Enhanced user experience with loading indicators on button while loading data in batches.
+
+### 9. Dice Game
+
+**Location:** `src/Projects/DiceGame/DiceGame.jsx`
+
+A fun and interactive Dice Game built using React, featuring modular components and smooth UI interactions.
+
+# Key Components Created
+
+- GameModal → Manages the main game logic and UI
+- InfoModal → Displays game rules in a pop-up modal
+- GameHeader → Contains title, info button, and close button
+- NumberSelector → Handles number selection (1-6)
+- DiceRoller → Displays and rolls the dice
+
+# Features:
+
+- Separation of Concerns and Modularized React Components
+- Score update with each dice roll
+- Showing error if not selected number and stopping dice to roll
+- Responsive UI using tailwind css
+
+# How to Play the Dice Game?
+
+1️⃣ Select a number (1-6) from the options
+2️⃣ Click the dice to roll it
+3️⃣ If the rolled number matches your selection → Score increases by that number
+4️⃣ If it doesn't match → Score decreases by 2
+5️⃣ Keep playing & aim for a high score! 🎲✨
