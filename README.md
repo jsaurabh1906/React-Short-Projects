@@ -84,3 +84,24 @@ A BMI (Body Mass Index) calculator that helps users determine their body mass in
 - Input fields for height and weight.
 - Calculation of BMI.
 - Responsive UI with tailwind css.
+
+### 7. Scroll Progress Bar
+
+**Location:** `src/Projects/CustomScroll/CustomScroll.jsx`
+
+A custom scroll progress bar that visually represents the user's scroll progress. Features include:
+
+- Real-time scroll tracking using `useState` and `useEffect`.
+- Smooth animation with Tailwind CSS.
+- Fixed positioning at the top of the page for consistent visibility.
+
+### 8. Load More Data
+
+**Location:** `src/Projects/LoadMoreData/LoadMoreData.jsx`
+
+A data loading component that allows users to load more data dynamically. Features include:
+
+- Implemented infinite scrolling behavior by fetching data in batches.
+- Optimized API fetching using a custom useFetch hook.
+- Designed UI using Tailwind CSS for a clean and responsive layout. Used the built in card from UI-Verse and modified it in in product Card.
+- Disabled "Load More" button when the total products reach 100. Enhanced user experience with loading indicators on button while loading data in batches.

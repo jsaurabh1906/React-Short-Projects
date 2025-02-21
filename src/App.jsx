@@ -1,6 +1,8 @@
 import "./App.css";
 import BmiCalculator from "./Projects/BMI_Calculator/BmiCalculator";
+import CustomScroll from "./Projects/CustomScroll/CustomScroll";
 import ImageSlider from "./Projects/ImageSlider/ImageSlider";
+import LoadMoreData from "./Projects/LoadMoreData/LoadMoreData";
 import QRCodeGenerator from "./Projects/QRCodeGenerator/QRCodeGenerator";
 import RandomColorGenerator from "./Projects/RandomColorGenerator/RandomColorGenerator";
 import StarRating from "./Projects/StarRating/StarRating";
@@ -20,7 +22,11 @@ function App() {
       {/* ==========================Text Analyzer==========================*/}
       {/* <TextAnalyzer /> */}
       {/* ==========================BMI Calculator==========================*/}
-      <BmiCalculator />
+      {/* <BmiCalculator /> */}
+      {/* ==========================Load More Data==========================*/}
+      <LoadMoreData />
+      {/* ==========================Custom Scroll Progress Bar==========================*/}
+      <CustomScroll />
     </>
   );
 }
