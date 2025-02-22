@@ -134,3 +134,32 @@ A fun and interactive Dice Game built using React, featuring modular components 
 3️⃣ If the rolled number matches your selection → Score increases by that number
 4️⃣ If it doesn't match → Score decreases by 2
 5️⃣ Keep playing & aim for a high score! 🎲✨
+
+### 9. Toggle Light and Dark Mode
+
+**Location:** `src/Projects/LightDarkMode/LightDarkMode.jsx`
+
+Created a toggle light and dark mode component using React, featuring a custom hook and smooth UI interactions.
+
+Key Components Created
+
+- ToggleButton → Handles the toggle button logic and UI
+- ThemeContext → Manages the theme state and provides context to child components
+
+Features:
+
+- Custom hook to manage theme state
+- Smooth transition between light and dark modes
+- Responsive UI using tailwind css and css modules
+
+### 10. Basic Calculator
+
+**Location:** `src/Projects/BasicCalculator/BasicCalculator.jsx`
+
+A basic calculator built using React with tailwind css. Features include:
+
+- Input fields for numbers.
+- Basic arithmetic operations (addition, subtraction, multiplication, division).
+- Advanced operations (square root, squares, percentage, Reciprocal).
+- Clear button to reset the calculator.
+- Responsive UI with tailwind css.
