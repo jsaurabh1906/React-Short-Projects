@@ -112,7 +112,7 @@ A data loading component that allows users to load more data dynamically. Featur
 
 A fun and interactive Dice Game built using React, featuring modular components and smooth UI interactions.
 
-# Key Components Created
+#### Key Components Created
 
 - GameModal → Manages the main game logic and UI
 - InfoModal → Displays game rules in a pop-up modal
@@ -120,14 +120,14 @@ A fun and interactive Dice Game built using React, featuring modular components 
 - NumberSelector → Handles number selection (1-6)
 - DiceRoller → Displays and rolls the dice
 
-# Features:
+#### Features:
 
 - Separation of Concerns and Modularized React Components
 - Score update with each dice roll
 - Showing error if not selected number and stopping dice to roll
 - Responsive UI using tailwind css
 
-# How to Play the Dice Game?
+#### How to Play the Dice Game?
 
 1️⃣ Select a number (1-6) from the options
 2️⃣ Click the dice to roll it
@@ -135,7 +135,7 @@ A fun and interactive Dice Game built using React, featuring modular components 
 4️⃣ If it doesn't match → Score decreases by 2
 5️⃣ Keep playing & aim for a high score! 🎲✨
 
-### 9. Toggle Light and Dark Mode
+### 10. Toggle Light and Dark Mode
 
 **Location:** `src/Projects/LightDarkMode/LightDarkMode.jsx`
 
@@ -152,7 +152,7 @@ Features:
 - Smooth transition between light and dark modes
 - Responsive UI using tailwind css and css modules
 
-### 10. Basic Calculator
+### 11. Basic Calculator
 
 **Location:** `src/Projects/BasicCalculator/BasicCalculator.jsx`
 
@@ -162,4 +162,17 @@ A basic calculator built using React with tailwind css. Features include:
 - Basic arithmetic operations (addition, subtraction, multiplication, division).
 - Advanced operations (square root, squares, percentage, Reciprocal).
 - Clear button to reset the calculator.
+- Responsive UI with tailwind css.
+
+### 12. Notes App
+
+**Location:** `src/Projects/NotesApp/NotesApp.jsx`
+
+A notes app built using React with tailwind css. Features include:
+
+- Input field for note title and content.
+- Save button to save the note.
+- Display of saved notes with title and content.
+- Edit button to edit the note.
+- Delete button to delete the note.
 - Responsive UI with tailwind css.

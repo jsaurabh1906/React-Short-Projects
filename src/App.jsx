@@ -7,6 +7,7 @@ import ImageSlider from "./Projects/ImageSlider/ImageSlider";
 import LightDarkMode from "./Projects/LightDarkMode/LightDarkMode";
 import { ThemeProvider } from "./Projects/LightDarkMode/ThemeContext";
 import LoadMoreData from "./Projects/LoadMoreData/LoadMoreData";
+import NotesApp from "./Projects/NotesApp/NotesApp";
 import QRCodeGenerator from "./Projects/QRCodeGenerator/QRCodeGenerator";
 import RandomColorGenerator from "./Projects/RandomColorGenerator/RandomColorGenerator";
 import StarRating from "./Projects/StarRating/StarRating";
@@ -34,9 +35,11 @@ function App() {
       {/* ==========================Dice Game==========================*/}
       {/* <DiceGame /> */}
       {/* ==========================Basic Calculator==========================*/}
-      <BasicCalculator />
+      {/* <BasicCalculator /> */}
       {/* ==========================Toggle Light Dark Mode==========================*/}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
+      {/* ==========================Notes App==========================*/}
+      <NotesApp />
     </ThemeProvider>
   );
 }
