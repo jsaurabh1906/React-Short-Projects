@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import BasicCalculator from "./Projects/BasicCalculator/BasicCalculator";
 import BmiCalculator from "./Projects/BMI_Calculator/BmiCalculator";
@@ -8,6 +9,7 @@ import LightDarkMode from "./Projects/LightDarkMode/LightDarkMode";
 import { ThemeProvider } from "./Projects/LightDarkMode/ThemeContext";
 import LoadMoreData from "./Projects/LoadMoreData/LoadMoreData";
 import NotesApp from "./Projects/NotesApp/NotesApp";
+import NotesWithRTKApp from "./Projects/NotesAppWithRTK/NotesWithRTKApp";
 import QRCodeGenerator from "./Projects/QRCodeGenerator/QRCodeGenerator";
 import RandomColorGenerator from "./Projects/RandomColorGenerator/RandomColorGenerator";
 import StarRating from "./Projects/StarRating/StarRating";
@@ -16,6 +18,7 @@ import TextAnalyzer from "./Projects/TextAnalyzer/TextAnalyzer";
 function App() {
   return (
     <ThemeProvider>
+      <ToastContainer />
       {/* ==========================Random Hex Generater========================== */}
       {/* <RandomColorGenerator /> */}
       {/* ==========================Star Rating========================== */}
@@ -39,7 +42,9 @@ function App() {
       {/* ==========================Toggle Light Dark Mode==========================*/}
       {/* <LightDarkMode /> */}
       {/* ==========================Notes App==========================*/}
-      <NotesApp />
+      {/* <NotesApp /> */}
+      {/* ==========================Notes App with RTk and Appwrite==========================*/}
+      <NotesWithRTKApp />
     </ThemeProvider>
   );
 }

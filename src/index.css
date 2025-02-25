@@ -14,6 +14,11 @@
   --color-brown-950: oklch(0.15 0.05 30); /* Deepest */
 }
 
+@theme {
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
 @layer utilities {
   .slide-in-top {
     animation: slideInTop 0.5s ease-in-out forwards;
