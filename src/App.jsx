@@ -14,6 +14,8 @@ import QRCodeGenerator from "./Projects/QRCodeGenerator/QRCodeGenerator";
 import RandomColorGenerator from "./Projects/RandomColorGenerator/RandomColorGenerator";
 import StarRating from "./Projects/StarRating/StarRating";
 import TextAnalyzer from "./Projects/TextAnalyzer/TextAnalyzer";
+// import WeatherApp from "./Projects/WeatherApp/WeatherApp";
+import AgeCalculator from "./Projects/AgeCalculator/AgeCalculator";
 
 function App() {
   return (
@@ -44,7 +46,11 @@ function App() {
       {/* ==========================Notes App==========================*/}
       {/* <NotesApp /> */}
       {/* ==========================Notes App with RTk and Appwrite==========================*/}
-      <NotesWithRTKApp />
+      {/* <NotesWithRTKApp /> */}
+      {/* ==========================Weather App==========================*/}
+      {/* <WeatherApp /> */}
+      {/* Age Calculator */}
+      <AgeCalculator />
     </ThemeProvider>
   );
 }
