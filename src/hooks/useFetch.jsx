@@ -10,15 +10,15 @@ export const useFetch = (url, options = {}) => {
       setIsLoading(true);
       const response = await fetch(url, options);
       if (!response.ok) {
-        throw new Error("Error fetching data");
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
       }
 
       const result = await response.json();
-
+      setError(null);
       console.log(result);
       setData(result);
-    } catch (error) {
-      setError(error.message);
+    } catch (err) {
+      setError(err.message || "An unknown error occurred");
     } finally {
       setIsLoading(false);
     }

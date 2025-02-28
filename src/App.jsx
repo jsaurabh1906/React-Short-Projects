@@ -14,7 +14,7 @@ import QRCodeGenerator from "./Projects/QRCodeGenerator/QRCodeGenerator";
 import RandomColorGenerator from "./Projects/RandomColorGenerator/RandomColorGenerator";
 import StarRating from "./Projects/StarRating/StarRating";
 import TextAnalyzer from "./Projects/TextAnalyzer/TextAnalyzer";
-// import WeatherApp from "./Projects/WeatherApp/WeatherApp";
+import WeatherApp from "./Projects/WeatherApp/WeatherApp";
 import AgeCalculator from "./Projects/AgeCalculator/AgeCalculator";
 
 function App() {

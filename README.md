@@ -176,3 +176,34 @@ A notes app built using React with tailwind css. Features include:
 - Edit button to edit the note.
 - Delete button to delete the note.
 - Responsive UI with tailwind css.
+
+### 13. Notes App with Redux Toolkit and Appwrite as backend Database
+
+**Location:** `src/Projects/NotesAppWithRTK/`
+
+A notes app built using React with tailwind css and Redux Toolkit. All the base features of Notes App are implemented along with Redux Toolkit for state management and Appwrite as backend database for storing notes.
+
+### 14. Weather App
+
+**Location:** `src/Projects/WeatherApp/WeatherApp.jsx`
+
+A weather app built using React with tailwind css. Features include:
+
+- Input Search field for city name.
+- Display of weather data including temperature, humidity, wind speed, and weather icon and much more.
+- Responsive UI with tailwind css.
+- Weather data is fetched from OpenWeatherMap API.
+- Error handling.
+- Forecast data is displayed for 5 days.
+
+### 16. Age Calculator
+
+**Location:** `src/Projects/AgeCalculator/AgeCalculator.jsx`
+
+A simple age calculator built using React with tailwind css. Features include:
+
+- Input fields for date of birth.
+- Display of age in years, months, and days.
+- Responsive UI with tailwind css.
+- Error handling for invalid date input.
+- Age is calculated based on the current date.
