@@ -16,6 +16,7 @@ import StarRating from "./Projects/StarRating/StarRating";
 import TextAnalyzer from "./Projects/TextAnalyzer/TextAnalyzer";
 import WeatherApp from "./Projects/WeatherApp/WeatherApp";
 import AgeCalculator from "./Projects/AgeCalculator/AgeCalculator";
+import DictionaryApp from "./Projects/DictionaryApp/DictionaryApp";
 
 function App() {
   return (
@@ -49,8 +50,10 @@ function App() {
       {/* <NotesWithRTKApp /> */}
       {/* ==========================Weather App==========================*/}
       {/* <WeatherApp /> */}
-      {/* Age Calculator */}
-      <AgeCalculator />
+      {/* ==========================Age Calculator========================== */}
+      {/* <AgeCalculator /> */}
+      {/* ==========================Dictionary App========================== */}
+      <DictionaryApp />
     </ThemeProvider>
   );
 }
