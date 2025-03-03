@@ -17,44 +17,17 @@ import TextAnalyzer from "./Projects/TextAnalyzer/TextAnalyzer";
 import WeatherApp from "./Projects/WeatherApp/WeatherApp";
 import AgeCalculator from "./Projects/AgeCalculator/AgeCalculator";
 import DictionaryApp from "./Projects/DictionaryApp/DictionaryApp";
-
+import Dashboard from "./components/Dashboard";
+import Layout from "./Routes/Layout";
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes/router";
 function App() {
   return (
-    <ThemeProvider>
-      <ToastContainer />
-      {/* ==========================Random Hex Generater========================== */}
-      {/* <RandomColorGenerator /> */}
-      {/* ==========================Star Rating========================== */}
-      {/* <StarRating maxNoOfStars={10} /> */}
-      {/* ==========================Image Slider========================== */}
-      {/* <ImageSlider /> */}
-      {/* ==========================Qr Code Generator========================== */}
-      {/* <QRCodeGenerator /> */}
-      {/* ==========================Text Analyzer==========================*/}
-      {/* <TextAnalyzer /> */}
-      {/* ==========================BMI Calculator==========================*/}
-      {/* <BmiCalculator /> */}
-      {/* ==========================Load More Data==========================*/}
-      {/* <LoadMoreData /> */}
-      {/* ==========================Custom Scroll Progress Bar==========================*/}
-      {/* <CustomScroll /> */}
-      {/* ==========================Dice Game==========================*/}
-      {/* <DiceGame /> */}
-      {/* ==========================Basic Calculator==========================*/}
-      {/* <BasicCalculator /> */}
-      {/* ==========================Toggle Light Dark Mode==========================*/}
-      {/* <LightDarkMode /> */}
-      {/* ==========================Notes App==========================*/}
-      {/* <NotesApp /> */}
-      {/* ==========================Notes App with RTk and Appwrite==========================*/}
-      {/* <NotesWithRTKApp /> */}
-      {/* ==========================Weather App==========================*/}
-      {/* <WeatherApp /> */}
-      {/* ==========================Age Calculator========================== */}
-      {/* <AgeCalculator /> */}
-      {/* ==========================Dictionary App========================== */}
-      <DictionaryApp />
-    </ThemeProvider>
+    <RouterProvider router={router}>
+      <ThemeProvider>
+        <ToastContainer />
+      </ThemeProvider>
+    </RouterProvider>
   );
 }
 
