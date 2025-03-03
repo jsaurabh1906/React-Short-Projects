@@ -28,5 +28,5 @@ export const useFetch = (url, options = {}) => {
     fetchData();
   }, [url]);
 
-  return [data, isLoading, error];
+  return [data, isLoading, error, fetchData];
 };

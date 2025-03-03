@@ -15,6 +15,7 @@ import {
   List,
   SunMoon,
   NotebookIcon as Notes,
+  User,
 } from "lucide-react";
 
 import BasicCalculator from "./Projects/BasicCalculator/BasicCalculator";
@@ -33,6 +34,7 @@ import TextAnalyzer from "./Projects/TextAnalyzer/TextAnalyzer";
 import WeatherApp from "./Projects/WeatherApp/WeatherApp";
 import AgeCalculator from "./Projects/AgeCalculator/AgeCalculator";
 import DictionaryApp from "./Projects/DictionaryApp/DictionaryApp";
+import RandomUserGenerator from "./Projects/RandomUserProfileGenerator/RandomUserGenerator";
 
 const projects = [
   {
@@ -118,6 +120,12 @@ const projects = [
     path: "/load-more-data",
     component: LoadMoreData,
     icon: <List size={20} />,
+  },
+  {
+    name: "Random User Generator",
+    path: "/random-user-generator",
+    component: RandomUserGenerator,
+    icon: <User size={20} />,
   },
   {
     name: "Light/Dark Mode",
