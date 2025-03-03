@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useFetch } from "../../Hooks/useFetch";
-import Loader from "../../Components/Loader";
+import { useFetch } from "../../hooks/useFetch";
+import Loader from "../../components/Loader";
 import Error from "../../components/Error";
 
 const RandomUserGenerator = () => {
