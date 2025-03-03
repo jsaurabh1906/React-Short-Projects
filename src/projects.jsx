@@ -16,6 +16,7 @@ import {
   SunMoon,
   NotebookIcon as Notes,
   User,
+  Palette,
 } from "lucide-react";
 
 import BasicCalculator from "./Projects/BasicCalculator/BasicCalculator";
@@ -35,6 +36,7 @@ import WeatherApp from "./Projects/WeatherApp/WeatherApp";
 import AgeCalculator from "./Projects/AgeCalculator/AgeCalculator";
 import DictionaryApp from "./Projects/DictionaryApp/DictionaryApp";
 import RandomUserGenerator from "./Projects/RandomUserProfileGenerator/RandomUserGenerator";
+import ColorPicker from "./Projects/ColorPicker/ColorPicker";
 
 const projects = [
   {
@@ -138,6 +140,12 @@ const projects = [
     path: "/notes-with-rtk",
     component: NotesWithRTKApp,
     icon: <Notes size={20} />,
+  },
+  {
+    name: "Color Picker",
+    path: "/color-picker",
+    component: ColorPicker,
+    icon: <Palette size={20} />,
   },
 ];
 

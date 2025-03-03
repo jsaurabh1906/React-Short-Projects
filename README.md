@@ -207,3 +207,25 @@ A simple age calculator built using React with tailwind css. Features include:
 - Responsive UI with tailwind css.
 - Error handling for invalid date input.
 - Age is calculated based on the current date.
+
+### 17. Random User Profile Generator
+
+**Location:** `src/Projects/RandomUserProfileGenerator/RandomUserGenerator.jsx`
+
+A random user profile generator built using React with tailwind css. Features include:
+
+- Display of random user profile including name, email, phone number, and address.
+- Random user data is fetched from randomuser.me API.
+- Responsive UI with tailwind css.
+- Error handling for API errors.
+
+### 18. Color Picker
+
+**Location:** `src/Projects/ColorPicker/ColorPicker.jsx`
+
+A color picker built using React with tailwind css. Features include:
+
+- Display of color picker and color value.
+- Display of color value in hex, rgb.
+- Responsive UI with tailwind css.
+- Color picker is based on the HTML5 color input element.
