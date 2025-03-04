@@ -17,6 +17,7 @@ import {
   NotebookIcon as Notes,
   User,
   Palette,
+  Scissors,
 } from "lucide-react";
 
 import BasicCalculator from "./Projects/BasicCalculator/BasicCalculator";
@@ -37,6 +38,8 @@ import AgeCalculator from "./Projects/AgeCalculator/AgeCalculator";
 import DictionaryApp from "./Projects/DictionaryApp/DictionaryApp";
 import RandomUserGenerator from "./Projects/RandomUserProfileGenerator/RandomUserGenerator";
 import ColorPicker from "./Projects/ColorPicker/ColorPicker";
+import RockPaperScissor from "./Projects/RockPaperScissorGame/RockPaperScissor";
+import RPSGameApp from "./Projects/RockPaperScissorGame/RPSGameApp";
 
 const projects = [
   {
@@ -146,6 +149,12 @@ const projects = [
     path: "/color-picker",
     component: ColorPicker,
     icon: <Palette size={20} />,
+  },
+  {
+    name: "Rock Paper Scissors",
+    path: "/rock-paper-scissors",
+    component: RPSGameApp,
+    icon: <Scissors size={20} />,
   },
 ];
 

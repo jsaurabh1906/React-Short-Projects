@@ -229,3 +229,16 @@ A color picker built using React with tailwind css. Features include:
 - Display of color value in hex, rgb.
 - Responsive UI with tailwind css.
 - Color picker is based on the HTML5 color input element.
+
+### 19. Rock Paper Scissors Game
+
+**Location:** `src/Projects/RockPaperScissors/RockPaperScissors.jsx`
+
+A rock paper scissors game built using React with tailwind css. Features include:
+
+- Display of game options (rock, paper, scissors).
+- Display of game result (win, lose, draw).
+- Responsive UI with tailwind css.
+- Animation for game result.
+- Score tracking.
+- Optimized Version of the game with React custom hooks
