@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Dashboard from "../components/Dashboard";
 
 const Layout = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
     <div className="flex min-h-screen ">
