@@ -40,6 +40,7 @@ import DictionaryApp from "./Projects/DictionaryApp/DictionaryApp";
 import RandomUserGenerator from "./Projects/RandomUserProfileGenerator/RandomUserGenerator";
 import ColorPicker from "./Projects/ColorPicker/ColorPicker";
 import RPSGameApp from "./Projects/RockPaperScissorGame/RPSGameApp";
+import ExpenseTrackerApp from "./Projects/ExpenseTracker/ExpenseTrackerApp";
 
 const projects = [
   {
@@ -174,6 +175,13 @@ const projects = [
     component: RPSGameApp,
     icon: <Scissors size={20} />,
     categories: ["🎮 Games", "✨ Fun"],
+  },
+  {
+    name: "Expense Tracker",
+    path: "/expense-tracker",
+    component: ExpenseTrackerApp,
+    icon: <Wallet size={20} />,
+    categories: ["💰 Finance", "📑 CRUD", "📊 Productivity"],
   },
 ];
 
