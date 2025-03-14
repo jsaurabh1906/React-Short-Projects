@@ -1,0 +1,8 @@
+@import "../styles/variables";
+
+.footer {
+  background-color: darken($primary-color, 10%);
+  color: white;
+  padding: $padding;
+  text-align: center;
+}

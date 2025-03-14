@@ -1,0 +1,9 @@
+@import "../styles/mixins", "../styles//variables";
+
+.button {
+  @include button-variant(map-get($colors, primary));
+}
+
+.button-danger {
+  @include button-variant(map-get($colors, danger));
+}

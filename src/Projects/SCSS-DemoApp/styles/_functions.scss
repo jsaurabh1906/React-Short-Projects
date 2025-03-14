@@ -1,0 +1,30 @@
+//functions in scss are used to perform calculations and operations on values
+//they are defined using the @function directive
+
+@function calculate-rem($value) {
+  @return #{$value / 16}rem;
+  // OR   @return $value / 16 * 1rem;
+}
+
+//example of a function that calculates the length of a string
+@function string-length($string) {
+  @return length($string);
+}
+
+//example of a function that calculates the width of a box
+@function box-width($width, $padding) {
+  @return $width + $padding * 2;
+}
+
+//example of a function that calculates the height of a box
+@function box-height($height, $padding) {
+  @return $height + $padding * 2;
+}
+//example of a function that calculates the margin of a box
+@function box-margin($margin) {
+  @return $margin / 2;
+}
+//example of a function that calculates the padding of a box
+@function box-padding($padding) {
+  @return $padding / 2;
+}

@@ -1,0 +1,10 @@
+@import "../styles/variables", "../styles/mixins";
+
+.header {
+  background-color: lighten($primary-color, $amount: 20);
+  padding: $padding;
+  color: white;
+  @include flex-center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,34 @@
+@import "../styles/variables", "../styles/mixins";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding;
+  background-color: map-get($map: $colors, $key: primary);
+  color: whitesmoke;
+  border-bottom: 0.25rem solid map-get($map: $colors, $key: tertiary);
+
+  div {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    li {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include responsive(mobile) {
+    flex-direction: column;
+    text-align: center;
+  }
+}

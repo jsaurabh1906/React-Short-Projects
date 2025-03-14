@@ -1,0 +1,8 @@
+@import "../styles/variables", "../styles/animations", "../styles/placeholders";
+
+.card {
+  @extend %card-style;
+  text-align: center;
+  color: $text-color;
+  animation: fade-in 0.5s ease-in-out;
+}

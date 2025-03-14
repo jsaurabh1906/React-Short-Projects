@@ -242,3 +242,30 @@ A rock paper scissors game built using React with tailwind css. Features include
 - Animation for game result.
 - Score tracking.
 - Optimized Version of the game with React custom hooks
+
+### 20. Expense Tracker
+
+**Location:** `src/Projects/ExpenseTracker/ExpenseTrackerApp.jsx`
+
+A expense tracker built using React with tailwind css/SCSS. Features include:
+
+- CRUD for Expenses.
+- Display of expenses with date, amount, and category.
+- Display expenses by category.
+- Summary Cards for total expenses, total no. expense, latest expense.
+- Stored data in local storage.
+
+### 21. SCSS Basics Demo App
+
+**Location:** `src/Projects/SCSS-DemoApp/SCSSDemoApp.jsx`
+
+A simple app built using React with SCSS. Basic Covered:
+
+- SCSS Operators
+- SCSS Variables
+- SCSS Nesting
+- SCSS Mixins
+- SCSS Functions
+- SCSS Extends
+- SCSS Partials
+- Placeholder Selectors

@@ -1,0 +1,36 @@
+// mixins are a way to group CSS declarations for reuse
+
+// This mixin creates a flexbox layout with center alignment for both items and content
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// This mixin creates a responsive layout based on the breakpoint provided
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+}
+
+@mixin button-variant($color) {
+  background-color: $color;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    background: darken($color, 10%);
+  }
+}

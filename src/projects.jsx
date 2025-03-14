@@ -19,6 +19,7 @@ import {
   Palette,
   Scissors,
   Wallet,
+  Code,
 } from "lucide-react";
 
 import BasicCalculator from "./Projects/BasicCalculator/BasicCalculator";
@@ -41,6 +42,7 @@ import RandomUserGenerator from "./Projects/RandomUserProfileGenerator/RandomUse
 import ColorPicker from "./Projects/ColorPicker/ColorPicker";
 import RPSGameApp from "./Projects/RockPaperScissorGame/RPSGameApp";
 import ExpenseTrackerApp from "./Projects/ExpenseTracker/ExpenseTrackerApp";
+import ScssDemoApp from "./Projects/SCSS-DemoApp/ScssDemoApp";
 
 const projects = [
   {
@@ -182,6 +184,13 @@ const projects = [
     component: ExpenseTrackerApp,
     icon: <Wallet size={20} />,
     categories: ["💰 Finance", "📑 CRUD", "📊 Productivity"],
+  },
+  {
+    name: "SCSS Demo App",
+    path: "/scss-demo-app",
+    component: ScssDemoApp,
+    icon: <Code size={20} />,
+    categories: ["🎨 UI", "🔧 Customization", "🖌️ SCSS"],
   },
 ];
 

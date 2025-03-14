@@ -1,0 +1,17 @@
+@import "../styles/variables", "../styles/functions";
+
+.hero {
+  text-align: center;
+  padding: calculate-rem(32);
+  background-color: lighten($primary-color, 40%);
+  height: auto;
+
+  p {
+    color: #2a3fa5;
+    font-size: calculate-rem(24);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 100;
+    // opearators: +, -, *, /
+    padding: $padding - $padding / 2;
+  }
+}
