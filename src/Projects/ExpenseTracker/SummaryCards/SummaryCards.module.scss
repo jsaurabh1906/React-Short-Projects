@@ -1,0 +1,28 @@
+.summary-cards {
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-3px);
+    }
+    .label {
+      color: #2b7fff;
+      margin-bottom: 0.25rem;
+    }
+    .value {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #193cb8;
+    }
+  }
+}

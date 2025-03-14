@@ -1,6 +1,14 @@
 import React, { forwardRef, useImperativeHandle, useRef } from "react";
 import { X } from "lucide-react";
-
+const categories = [
+  "Food",
+  "Transportation",
+  "Entertainment",
+  "Utilities",
+  "Shopping",
+  "Healthcare",
+  "Other",
+];
 const ModalWrapper = forwardRef(({ children }, ref) => {
   const formRef = useRef();
 
@@ -12,16 +20,18 @@ const ModalWrapper = forwardRef(({ children }, ref) => {
   return (
     <dialog
       ref={formRef}
-      className="bg-white/80 backdrop-blur-lg w-[90%] md:w-[500px] mx-auto my-10 md:my-20 rounded-2xl shadow-2xl p-6 animate-zoom-in border border-purple-300"
+      className="bg-white/80 backdrop-blur-lg w-[90%] md:w-[500px] mx-auto my-10 md:my-20 rounded-2xl shadow-2xl p-6 animate-zoom-in border border-blue-300"
     >
       {children}
     </dialog>
   );
 });
 
-const ModalHeader = ({ onClose }) => (
-  <div className="flex justify-between items-center bg-gradient-to-r from-purple-500 to-purple-700 text-white px-5 py-3 rounded-t-2xl">
-    <h2 className="text-xl font-semibold">Add Expense</h2>
+const ModalHeader = ({ onClose, isEditMode }) => (
+  <div className="flex justify-between items-center bg-gradient-to-r from-blue-500 to-blue-700 text-white px-5 py-3 rounded-t-2xl">
+    <h2 className="text-xl font-semibold">
+      {isEditMode ? "Update Expense" : "Add Expense"}
+    </h2>
     <button
       type="button"
       onClick={onClose}
@@ -35,7 +45,7 @@ const ModalHeader = ({ onClose }) => (
 const ModalForm = ({ formData, setFormData, onChange }) => (
   <form method="dialog" className="space-y-5 p-5">
     <input
-      className="w-full px-4 py-2 border border-purple-400 rounded-lg bg-purple-50 text-purple-900 placeholder-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm"
+      className="w-full px-4 py-2 border border-blue-400 rounded-lg bg-blue-50 text-blue-900 placeholder-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm"
       placeholder="Expense Name"
       type="text"
       name="title"
@@ -44,7 +54,7 @@ const ModalForm = ({ formData, setFormData, onChange }) => (
       required
     />
     <input
-      className="w-full px-4 py-2 border border-purple-400 rounded-lg bg-purple-50 text-purple-900 placeholder-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm"
+      className="w-full px-4 py-2 border border-blue-400 rounded-lg bg-blue-50 text-blue-900 placeholder-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm"
       placeholder="Amount"
       type="number"
       name="amount"
@@ -52,16 +62,34 @@ const ModalForm = ({ formData, setFormData, onChange }) => (
       onChange={onChange}
       required
     />
-    <input
-      className="w-full px-4 py-2 border border-purple-400 rounded-lg bg-purple-50 text-purple-900 placeholder-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm"
+    {/* <input
+      className="w-full px-4 py-2 border border-blue-400 rounded-lg bg-blue-50 text-blue-900 placeholder-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm"
       placeholder="Category"
       name="category"
       value={formData.category}
       onChange={onChange}
       required
-    />
+    /> */}
+    <select
+      id="category"
+      name="category"
+      value={formData.category}
+      onChange={onChange}
+      className="w-full px-4 py-2 border border-blue-400 rounded-lg bg-blue-50 text-blue-900 
+            placeholder-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none 
+            shadow-sm cursor-pointer"
+      required
+    >
+      <option value="">Select a category</option>
+      {categories.map((category) => (
+        <option key={category} value={category}>
+          {category}
+        </option>
+      ))}
+    </select>
+
     <input
-      className="w-full px-4 py-2 border border-purple-400 rounded-lg bg-purple-50 text-purple-900 placeholder-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm"
+      className="w-full px-4 py-2 border border-blue-400 rounded-lg bg-blue-50 text-blue-900 placeholder-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm"
       placeholder="Date"
       type="date"
       name="date"
@@ -77,32 +105,41 @@ const ModalActions = ({ onClose, onHandleSubmit }) => (
     <button
       type="button"
       onClick={onClose}
-      className="px-5 py-2 rounded-lg text-purple-700 border border-purple-500 hover:bg-purple-200 transition shadow-md"
+      className="px-5 py-2 rounded-lg text-blue-700 border border-blue-500 hover:bg-blue-200 transition shadow-md"
     >
       Cancel
     </button>
     <button
       onClick={onHandleSubmit}
       type="submit"
-      className="px-6 py-2 rounded-lg bg-purple-600 text-white hover:bg-purple-700 transition shadow-md"
+      className="px-6 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition shadow-md"
     >
       Submit
     </button>
   </div>
 );
 
-const FormModal = forwardRef((props, ref) => {
-  const { formData, setFormData, onChange, onHandleSubmit } = props;
-  return (
-    <ModalWrapper ref={ref}>
-      <ModalHeader onClose={() => ref.current.closeModal()} />
-      <ModalForm {...props} />
-      <ModalActions
-        onClose={() => ref.current.closeModal()}
-        onHandleSubmit={onHandleSubmit}
-      />
-    </ModalWrapper>
-  );
-});
+const FormModal = forwardRef(
+  ({ formData, setFormData, onChange, onHandleSubmit, isEditMode }, ref) => {
+    return (
+      <ModalWrapper ref={ref}>
+        <ModalHeader
+          onClose={() => ref.current.closeModal()}
+          isEditMode={isEditMode}
+        />
+        <ModalForm
+          formData={formData}
+          setFormData={setFormData}
+          onChange={onChange}
+        />
+        <ModalActions
+          onClose={() => ref.current.closeModal()}
+          onHandleSubmit={onHandleSubmit}
+          isEditMode={isEditMode}
+        />
+      </ModalWrapper>
+    );
+  }
+);
 
 export default FormModal;

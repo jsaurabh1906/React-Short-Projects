@@ -1,0 +1,54 @@
+.expenses-category {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem 0;
+
+  .category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .progress-bar {
+    width: 100%;
+    background-color: #e5e7eb; /* Light gray for contrast */
+    border-radius: 8px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    background-color: #155dfc;
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .category-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+
+    .category-name {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .category-value {
+      font-size: 0.875rem;
+      font-weight: bold;
+      color: #111827;
+    }
+  }
+}
