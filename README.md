@@ -269,3 +269,16 @@ A simple app built using React with SCSS. Basic Covered:
 - SCSS Extends
 - SCSS Partials
 - Placeholder Selectors
+
+### 22. Password Generator
+
+**Location:** `src/Projects/PasswordGeneratorApp/PasswordGenerator.jsx`
+
+A password generator built using React with SCSS. Features include:
+
+- Generate password with length between 4 to 30 characters.
+- Generates random passwords based on user preferences.
+- Options to include uppercase, lowercase, numbers, and symbols.
+- Password strength indicator.
+- Copy password to clipboard.
+- Responsive UI with SCSS.

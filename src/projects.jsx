@@ -20,6 +20,7 @@ import {
   Scissors,
   Wallet,
   Code,
+  Key,
 } from "lucide-react";
 
 import BasicCalculator from "./Projects/BasicCalculator/BasicCalculator";
@@ -43,6 +44,7 @@ import ColorPicker from "./Projects/ColorPicker/ColorPicker";
 import RPSGameApp from "./Projects/RockPaperScissorGame/RPSGameApp";
 import ExpenseTrackerApp from "./Projects/ExpenseTracker/ExpenseTrackerApp";
 import ScssDemoApp from "./Projects/SCSS-DemoApp/ScssDemoApp";
+import PasswordGenerator from "./Projects/PasswordGeneratorApp/PasswordGenerator";
 
 const projects = [
   {
@@ -191,6 +193,13 @@ const projects = [
     component: ScssDemoApp,
     icon: <Code size={20} />,
     categories: ["🎨 UI", "🔧 Customization", "🖌️ SCSS"],
+  },
+  {
+    name: "Password Generator",
+    path: "/password-generator",
+    component: PasswordGenerator,
+    icon: <Key size={20} />,
+    categories: ["🛠 Utility", "🔢 Generator", "🔐 Security"],
   },
 ];
 
