@@ -21,6 +21,7 @@ import {
   Wallet,
   Code,
   Key,
+  Clock,
 } from "lucide-react";
 
 import BasicCalculator from "./Projects/BasicCalculator/BasicCalculator";
@@ -45,6 +46,7 @@ import RPSGameApp from "./Projects/RockPaperScissorGame/RPSGameApp";
 import ExpenseTrackerApp from "./Projects/ExpenseTracker/ExpenseTrackerApp";
 import ScssDemoApp from "./Projects/SCSS-DemoApp/ScssDemoApp";
 import PasswordGenerator from "./Projects/PasswordGeneratorApp/PasswordGenerator";
+import StopwatchTimerApp from "./Projects/StopwatchAndTimer/StopwatchAndTimerApp";
 
 const projects = [
   {
@@ -88,6 +90,13 @@ const projects = [
     component: NotesApp,
     icon: <Notebook size={20} />,
     categories: ["📊 Productivity", "📑 CRUD"],
+  },
+  {
+    name: "Stopwatch and Timer",
+    path: "/stopwatch-and-timer",
+    component: StopwatchTimerApp,
+    icon: <Clock size={20} />,
+    categories: ["🛠 Utility", "⏱️ Stopwatch", "⏲️ Timer"],
   },
   {
     name: "Dictionary App",

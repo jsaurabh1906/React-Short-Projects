@@ -282,3 +282,17 @@ A password generator built using React with SCSS. Features include:
 - Password strength indicator.
 - Copy password to clipboard.
 - Responsive UI with SCSS.
+
+### 23. Stopwatch and Timer
+
+**Location:** `src/Projects/StopwatchAndTimer/StopwatchAndTimerApp.jsx`
+
+A stopwatch and timer built using React with Tailwind CSS. Features include:
+
+- Stopwatch with start, stop, reset functionality.
+- Laps functionality for stopwatch.
+- Timer with start, stop, reset functionality.
+- Custom Input timer functionality.
+- Display of elapsed or remaining time in minutes:seconds:milliseconds for stopwatch and timer respectively.
+- Responsive UI with Tailwind CSS.
+- Timer and stopwatch are independent of each other.
